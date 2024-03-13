@@ -1,0 +1,29 @@
+
+name: 'steering-election'
+on:
+  workflow_dispatch:
+    inputs:
+      candidate:
+          description: "Name of the candidate"
+          required: true
+  schedule:
+    - cron: '*/30 * * * *' # checks for votes updates every 30 minutes
+
+permissions:
+  contents: write
+
+jobs:
+  start-voting:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Start Vote
+        uses: tfadeyi/start-voting@v0.1.0 
+        with:
+          duration: 10m
+          title: "Add {{ .github.event.inputs.candidate }} to steering committee"
+          proposal: "Add {{ .github.event.inputs.candidate }} to steering committee"
+          participants: "@tfadeyi,@tfadeyi1"
+          category_id: "D_kwDOLdrPf84AYTC4"
+          yes: "{{ .github.event.inputs.candidate }}"
+          owner: "tfadeyi"
