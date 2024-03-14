@@ -27,3 +27,4 @@ jobs:
           category_id: "D_kwDOLdrPf84AYTC4"
           yes: "{{ .github.event.inputs.candidate }}"
           owner: "tfadeyi"
+          voting: "simple_majority"
