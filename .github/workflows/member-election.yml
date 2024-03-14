@@ -30,5 +30,6 @@ jobs:
           yes: "${{ github.event.inputs.candidate }}"
           owner: "tfadeyi"
           repository: "oss-governance-test"
+          repository_id: "R_kgDOLdrPfw"
           voting: "simple_majority"
-          token: "${{ secrets.MY_TOKEN }}"
+          # token: "${{ secrets.MY_TOKEN }}"
