@@ -15,6 +15,7 @@ permissions:
 jobs:
   start-voting:
     runs-on: ubuntu-latest
+    if: $GITHUB_EVENT_NAME == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v4
       - name: Start Vote
