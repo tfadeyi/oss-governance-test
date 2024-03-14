@@ -26,7 +26,7 @@ jobs:
           title: "Add ${{ github.event.inputs.candidate }} to steering committee"
           proposal: "Add ${{ github.event.inputs.candidate }} to steering committee"
           participants: "@tfadeyi,@tfadeyi1"
-          category_id: "D_kwDOLdrPf84AYTC4"
+          category_id: "DIC_kwDOLdrPf84Cd876"
           yes: "${{ github.event.inputs.candidate }}"
           owner: "tfadeyi"
           repository: "oss-governance-test"
