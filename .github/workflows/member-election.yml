@@ -10,7 +10,8 @@ on:
     - cron: '*/30 * * * *' # checks for votes updates every 30 minutes
 
 permissions:
-  contents: write
+  discussions: write
+  repository-projects: write
 
 jobs:
   start-voting:
@@ -26,6 +27,6 @@ jobs:
           proposal: "Add ${{ github.event.inputs.candidate }} to steering committee"
           participants: "@tfadeyi,@tfadeyi1"
           category_id: "D_kwDOLdrPf84AYTC4"
-          yes: github.event.inputs.candidate
+          yes: "${{ github.event.inputs.candidate }}"
           owner: "tfadeyi"
           voting: "simple_majority"
