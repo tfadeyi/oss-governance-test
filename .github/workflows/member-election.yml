@@ -31,3 +31,4 @@ jobs:
           owner: "tfadeyi"
           repository: "oss-governance-test"
           voting: "simple_majority"
+          token: "${{ secrets.MY_TOKEN }}"
