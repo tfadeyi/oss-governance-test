@@ -33,8 +33,7 @@ jobs:
           category: "general"
   get-voting:
     runs-on: ubuntu-latest
-    #if: github.event.name == 'workflow_dispatch'
     steps:
       - uses: actions/checkout@v4
       - name: Start Vote
-        uses: tfadeyi/get-voting-outcome@v0.1.0
+        uses: tfadeyi/get-voting-outcome@v0.1.1
