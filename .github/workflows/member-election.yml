@@ -20,7 +20,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Start Vote
-        uses: tfadeyi/governance@v0.1.0 
+        uses: tfadeyi/start-voting@v0.1.0
         with:
           duration: 10m
           title: "Add ${{ github.event.inputs.candidate }} to steering committee"
