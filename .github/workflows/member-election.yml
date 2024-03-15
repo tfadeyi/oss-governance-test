@@ -36,4 +36,4 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Start Vote
-        uses: tfadeyi/get-voting-outcome@v0.1.1
+        uses: tfadeyi/get-voting-outcome@v0.1.2
