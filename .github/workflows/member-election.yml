@@ -38,4 +38,4 @@ jobs:
       - name: Start Vote
         uses: tfadeyi/get-voting-outcome@v0.1.2
         with:
-          category: "generic"
+          category: "General"
