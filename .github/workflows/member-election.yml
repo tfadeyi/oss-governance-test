@@ -30,6 +30,7 @@ jobs:
           owner: "tfadeyi"
           repository: "oss-governance-test"
           voting: "simple_majority"
+          category: "general"
   get-voting:
     runs-on: ubuntu-latest
     #if: github.event.name == 'workflow_dispatch'
