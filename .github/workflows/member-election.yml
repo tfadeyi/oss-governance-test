@@ -30,7 +30,8 @@ jobs:
           owner: "tfadeyi"
           repository: "oss-governance-test"
           voting: "simple_majority"
-          category: "general"
+          category: "General"
+          instance: "steering-election"
   get-voting:
     runs-on: ubuntu-latest
     steps:
@@ -39,3 +40,4 @@ jobs:
         uses: tfadeyi/get-voting-outcome@v0.1.2
         with:
           category: "General"
+          instance: "steering-election"
