@@ -6,8 +6,8 @@ on:
       candidate:
           description: "Name of the candidate"
           required: true
-  #schedule:
-    #- cron: '*/10 * * * *' # checks for votes updates every 30 minutes
+  schedule:
+    - cron: '*/10 * * * *' # checks for votes updates every 30 minutes
 
 permissions:
   issues: write
@@ -42,7 +42,7 @@ jobs:
           owner: "tfadeyi"
           repository: "tfadeyi/oss-governance-test"
           voting: simple_majority
-          duration: 10m
+          duration: 1h
           participants: "tfadeyi"
           labels: "steering-election"
           instance: "election"
