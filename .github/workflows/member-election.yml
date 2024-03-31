@@ -39,5 +39,7 @@ jobs:
       - name: Start Vote
         uses: tfadeyi/get-voting-outcome@v0.1.3
         with:
+          duration: 10m
+          participants: "@tfadeyi"
           labels: "steering-election"
           instance: "steering-election"
