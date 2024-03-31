@@ -37,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Start Vote
-        uses: tfadeyi/get-voting-outcome@v0.1.4
+        uses: tfadeyi/get-voting-outcome@v0.1.5
         with:
           duration: 10m
           participants: "@tfadeyi"
