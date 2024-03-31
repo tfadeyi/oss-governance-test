@@ -39,6 +39,7 @@ jobs:
       - name: Start Vote
         uses: tfadeyi/get-voting-outcome@v0.1.5
         with:
+          voting: simple_majority
           duration: 10m
           participants: "@tfadeyi"
           labels: "steering-election"
