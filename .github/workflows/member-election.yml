@@ -36,7 +36,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Start Vote
+      - name: Monitor Voting
         uses: tfadeyi/get-voting-outcome@v0.1.5
         with:
           owner: "tfadeyi"
