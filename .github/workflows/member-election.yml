@@ -40,7 +40,7 @@ jobs:
         uses: tfadeyi/get-voting-outcome@v0.1.5
         with:
           owner: "tfadeyi"
-          repository: "oss-governance-test"
+          repository: "tfadeyi/oss-governance-test"
           voting: simple_majority
           duration: 10m
           participants: "tfadeyi"
