@@ -45,4 +45,4 @@ jobs:
           duration: 10m
           participants: "tfadeyi"
           labels: "steering-election"
-          instance: "steering-election"
+          instance: "election"
