@@ -10,7 +10,7 @@ on:
     #- cron: '*/10 * * * *' # checks for votes updates every 30 minutes
 
 permissions:
-  discussions: write
+  issues: write
   repository-projects: write
 
 jobs:
