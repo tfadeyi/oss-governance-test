@@ -37,7 +37,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Monitor Voting
-        uses: tfadeyi/get-voting-outcome@v0.1.5
+        uses: tfadeyi/get-voting-outcome@v0.1.6
         with:
           owner: "tfadeyi"
           repository: "tfadeyi/oss-governance-test"
