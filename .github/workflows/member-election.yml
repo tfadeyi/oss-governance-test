@@ -30,12 +30,15 @@ jobs:
   #         voting: "simple_majority"
   #         category: "General"
   #         instance: "steering-election"
-  get-voting:
+  monitor:
+    outputs:
+      outcome: ${{ steps.monitor.outputs.outcome }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: Monitor Voting
-        uses: tfadeyi/get-voting-outcome@v0.1.6
+        id: monitor
+        uses: tfadeyi/get-voting-outcome@v0.1.7
         with:
           owner: "tfadeyi"
           repository: "tfadeyi/oss-governance-test"
@@ -44,3 +47,10 @@ jobs:
           participants: "tfadeyi"
           labels: "steering-election"
           instance: "election"
+  get-votes:
+    runs-on: ubuntu-latest
+    needs: monitor
+    steps:
+      - env:
+          OUTPUT1: ${{needs.monitor.outputs.outcome}}
+        run: echo "$OUTPUT1"
