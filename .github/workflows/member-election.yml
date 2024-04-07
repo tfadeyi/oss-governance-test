@@ -42,7 +42,7 @@ jobs:
           owner: "tfadeyi"
           repository: "tfadeyi/oss-governance-test"
           voting: simple_majority
-          duration: 1h
+          duration: 5m
           participants: "tfadeyi"
           labels: "steering-election"
           instance: "election"
