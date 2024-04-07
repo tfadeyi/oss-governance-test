@@ -9,9 +9,7 @@ on:
   schedule:
     - cron: '*/10 * * * *' # checks for votes updates every 30 minutes
 
-permissions:
-  issues: write
-  repository-projects: write
+permissions: write-all
 
 jobs:
   # start-voting:
