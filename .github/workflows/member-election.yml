@@ -54,9 +54,6 @@ jobs:
       - uses: actions/checkout@v4
       - env:
           OUTPUT1: ${{needs.monitor.outputs.outcome}}
-        run: echo "$OUTOUT1" | jq -r .[].proposal | grep -o "@.*"
-      - env:
-          OUTPUT1: ${{needs.monitor.outputs.outcome}}
         run: echo "$OUTOUT1" | jq -r .[].proposal | grep -o "@.*" >> ${{ env.home}}/steering
       - name: Commit files
         run: |
